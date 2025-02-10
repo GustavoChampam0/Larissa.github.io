@@ -1,0 +1,46 @@
+/* tablet.css */
+@media (max-width: 960px) {
+  .sobre-mim {
+    display: flex;
+    flex-direction: column; /* Deixa a seção em coluna para dispositivos médios */
+    gap: 20px; /* Espaçamento entre as seções */
+    padding: 20px; /* Ajusta o padding para maior espaçamento em telas médias */
+  }
+
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Ajusta o número de colunas */
+    gap: 20px; /* Adiciona espaçamento entre os cards */
+  }
+
+  .skills__container {
+    justify-content: center; /* Centraliza os ícones das skills */
+    gap: 20px; /* Garante que haja espaçamento entre os ícones */
+  }
+
+  .description__text {
+    font-size: 1rem; /* Tamanho de texto para melhor legibilidade */
+    line-height: 1.6; /* Aumenta a linha para tornar o texto mais legível */
+    text-align: justify; /* Justifica o texto para melhorar a formatação */
+  }
+
+  .profile__name {
+    font-size: 2.5rem; /* Ajuste no tamanho da fonte para telas médias */
+  }
+
+  .profile__text {
+    font-size: 1.2rem; /* Ajuste no tamanho da fonte para telas médias */
+  }
+
+  .skills__icon {
+    width: 120px; /* Ajuste no tamanho dos ícones das skills */
+    height: 120px;
+  }
+
+  .skills__icon i {
+    font-size: 1.8rem; /* Ajuste no tamanho do ícone */
+  }
+
+  .skills__icon span {
+    font-size: 1rem; /* Ajuste no tamanho do texto */
+  }
+}

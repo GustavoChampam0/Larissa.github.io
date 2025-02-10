@@ -1,0 +1,18 @@
+/* Reset de estilos globais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Remove os marcadores das listas */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove a decoração dos links e herda a cor do elemento pai */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  

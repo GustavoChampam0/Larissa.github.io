@@ -1,0 +1,25 @@
+.section__tittle {
+  grid-area: tittle;
+  font-size: 220px;
+  text-align: center;
+  background: linear-gradient(#444, #000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold; /* Adiciona negrito para maior destaque */
+  text-transform: uppercase; /* Transforma o texto para maiúsculas */
+  line-height: 1.2; /* Ajusta a altura da linha */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .section__tittle {
+    font-size: 120px; /* Diminui o tamanho da fonte para telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .section__tittle {
+    font-size: 80px; /* Tamanho ainda menor para dispositivos móveis */
+  }
+}
