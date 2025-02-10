@@ -1,0 +1,67 @@
+/* mobile.css */
+@media (max-width: 640px) {
+  .contatos {
+    height: auto; /* Remove altura fixa */
+    padding: 20px;
+    margin: 0 15px; /* Adiciona margem para evitar o contato com as bordas */
+  }
+
+  .social-container {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center; /* Centraliza os itens */
+  }
+
+  .social {
+    width: 60px; /* Aumenta um pouco o tamanho dos ícones sociais */
+    height: 60px;
+    font-size: 1.8rem; /* Ajuste do tamanho dos ícones */
+    transition: transform 0.2s ease; /* Adiciona uma animação ao hover */
+  }
+
+  .social:hover {
+    transform: scale(1.1); /* Adiciona um efeito de aumento no hover */
+  }
+
+  .card-container {
+    grid-template-columns: 1fr 1fr; /* Ajuste para 2 colunas em vez de 3 */
+    gap: 20px; /* Adicionando espaço entre os cards */
+  }
+
+  .card {
+    height: auto; /* Altura automática para garantir que o conteúdo seja exibido corretamente */
+    font-size: 14px; /* Reduzindo um pouco o tamanho da fonte */
+    padding: 15px; /* Aumenta o espaçamento interno */
+    display: flex; /* Garante que o conteúdo do card se ajuste corretamente */
+    flex-direction: column;
+    border-radius: 8px; /* Adiciona bordas arredondadas para uma aparência mais suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave aos cards */
+  }
+
+  .profile__name {
+    font-size: 2.2rem; /* Tamanho de fonte ajustado para dispositivos móveis */
+  }
+
+  .profile__text {
+    font-size: 1.2rem; /* Ajuste da descrição */
+    line-height: 1.5; /* Melhorando a legibilidade */
+    margin-bottom: 10px; /* Adiciona espaçamento inferior para o texto */
+  }
+
+  img {
+    max-width: 100%; /* Tornando as imagens responsivas */
+    height: auto;
+    object-fit: cover; /* Garantindo que as imagens cubram o espaço sem distorcer */
+    border-radius: 8px; /* Bordas arredondadas para as imagens */
+  }
+
+  /* Garantir que o conteúdo se ajuste bem nas seções */
+  header, section {
+    padding: 10px; /* Adicionando mais padding para evitar que o conteúdo fique colado nas bordas */
+  }
+
+  /* Ajustes de margem nos cards */
+  .card-container {
+    margin-bottom: 20px; /* Adiciona margem inferior para separar os cards da seção seguinte */
+  }
+}
